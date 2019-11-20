@@ -1,0 +1,12 @@
+<h1>ZPRACOVÁNÍ TEXTU O DÉLCE {{delkalistu}} SLOV.</h1>
+
+<a href= "{% url 'about' %}">
+  DOMU
+</a>
+{{fulltext}}
+<br><br>
+{% for key, value in worddict.items %}
+<br>
+{{key}} - {{value}}
+
+{% endfor %}
